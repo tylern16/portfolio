@@ -1,0 +1,31 @@
+body {
+
+}
+h1 {
+  text-align: center;
+}
+
+
+header {
+  padding: 10px;
+  border-bottom: 1px solid;
+  background-color: tan;
+}
+
+.menu-button {
+  float: right;
+}
+
+.menu-div {
+  text-align: center;
+  float: right;
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.menu-button2, .about-button, .projects-button, .resume-button {
+  margin: 10px 20px;
+}
