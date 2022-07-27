@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Tyler Nenninger</title>
+    <link rel="icon" type="image/x-icon" href="pictures/favicon3.jpeg">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d1c24a544e.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="app.js" charset="utf-8"></script>
   </head>
@@ -11,21 +14,23 @@
   <body>
     <nav></nav>
     <h1 id="welcome">Tyler Nenninger</h1>
-    <p>
+    <p class='main-text'>
       I'm an aspiring software engineer interested in working on projects that deliver exceptional digital experience.
       I am currently building my skills at General Assembly's Software Engineering Immersive bootcamp.
     </p>
-    <h2 id="about-me">About Me</h2>
-    <p>
-      Hi! My name is Tyler and I enjoy learning new things and solving complex problems.
-      My interest in engineering started in 2016 when I enrolled in Texas A&M's School of Engineering(gig `em), where I graduated with a degree in Industrial Distribution.
-      <br>
-      <br>
-      After graduation, I worked in a sales role for Mendix, one of the leader low-code application development platform providers in the market.
-    </p>
+    <div id="about-container">
+      <h2 id="about-me">About Me</h2>
+      <p class='main-text'>
+        Hi! My name is Tyler and I enjoy learning new things and solving complex problems.
+        My interest in engineering started in 2016 when I enrolled in Texas A&M's School of Engineering(gig `em), where I graduated with a degree in Industrial Distribution.
+        <br>
+        <br>
+        After graduation, I worked in a sales role for Mendix, one of the leader low-code application development platform providers in the market.
+      </p>
+    </div>
     <h2 id="projects">Projects</h2>
-    <div id='projects-container'>
-      <img class='landscaper' src='/Users/tylernenninger/Desktop/dev/portfolio/pictures/Screen Shot 2022-07-26 at 7.00.13 PM.png'>
+    <div id='projects-container' class='main-text'>
+      <img class='landscaper' src='pictures/Screen Shot 2022-07-27 at 10.02.10 AM.png'>
       <div id='projects-container2'>
         <h3 id='landscaper-title'>Landscaper</h3>
         <p id='landscaper-text'>
@@ -33,20 +38,26 @@
         </p>
       </div>
     </div>
-    <h3>Tic Tac Toe</h3>
-    <p>
-      The classic game involving arrays, loops, and conditionals. Built using jQuery and some minor HTML and CSS.
-    <img class='tic' src='https://miro.medium.com/max/395/1*mIjIjWIUc45MQjLDVkOC-w.png'>
-    <h2 id="resume">Resume</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <h2>Contact Me</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div id='tic-container' class='main-text'>
+      <div id='tic-container2'>
+        <h3>Tic Tac Toe</h3>
+        <p>
+          The classic game involving arrays, loops, and conditionals. Built using jQuery and some minor HTML and CSS.
+        </p>
+      </div>
+      <img class='tic' src='https://miro.medium.com/max/395/1*mIjIjWIUc45MQjLDVkOC-w.png'>
+    </div>
+    <div id='resume-container'>
+      <h2 id="resume">Resume</h2>
+      <p class='main-text'>View my resume here: <i class="fa-solid fa-file-pdf"></i>
+      <a href='pictures/TylerNenningerResume3.docx.pdf'>Resume</a>
+    </div>
+    <h2 id='contact'>Contact Me</h2>
+    <p class='main-text'><i class="fa-solid fa-envelope"></i> tynenninger@gmail.com</p>
     <footer>
-      <a href=https://www.linkedin.com/in/tylernenninger/>LinkedIn</a>
-      <a href=https://github.com/tylern16/>Github</a>
+      <a id='linkedin-icon' href=https://www.linkedin.com/in/tylernenninger/><i class="fa-brands fa-linkedin"></i></a>
+      <a id='github-icon' href=https://github.com/tylern16/><i class="fa-brands fa-github"></i></a>
+
     </footer>
   </body>
 </html>
