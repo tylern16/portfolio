@@ -1,10 +1,34 @@
+const scrollToAbout = () => {
+  const element = document.getElementById('about-me')
+  element.scrollIntoView()
+}
+const scrollToProjects = () => {
+  const element = document.getElementById('projects')
+  element.scrollIntoView()
+}
+const scrollToResume = () => {
+  const element = document.getElementById('resume')
+  element.scrollIntoView()
+}
+const scrollToTop = () => {
+  const element = document.getElementById('welcome')
+  element.scrollIntoView()
+}
+const scrollDownOnClick = () => {
+  $('.about-button').on('click', scrollToAbout)
+  $('.projects-button').on('click', scrollToProjects)
+  $('.resume-button').on('click', scrollToResume)
+  $('.home-button').on('click', scrollToTop)
+
+}
+
 const createHeaderButtons = () => {
   $homeButton = $('<button>').text('Home').addClass('home-button')
 
   $menuButton = $('<button>').text('menu').addClass('menu-button')
 
 
-  $('header').append($homeButton, $menuButton)
+  $('nav').append($homeButton, $menuButton)
 }
 
 
@@ -16,10 +40,11 @@ const createMenu = () => {
   $aboutMeButton = $('<button>').addClass('about-button').text('About Me')
   $projectsButton = $('<button>').addClass('projects-button').text('Projects')
   $resumeButton = $('<button>').addClass('resume-button').text('Resume')
+  $github = $('<a>').text('Github').addClass('github-button').attr('href', 'https://github.com/tylern16').css('display', 'inline-block')
+  $linkedIn = $('<a>').text('LinkedIn').addClass('linkedin-button').attr('href', 'https://www.linkedin.com/in/tylernenninger').css('display', 'inline-block')
 
-
-  $('header').append($menuDiv)
-  $menuDiv.append($menuButton, $aboutMeButton, $projectsButton, $resumeButton)
+  $('nav').append($menuDiv)
+  $menuDiv.append($menuButton, $aboutMeButton, $projectsButton, $resumeButton, $github, $linkedIn)
 
 
   $menuDiv.hide()
@@ -33,7 +58,12 @@ const createMenu = () => {
 
 
 
+
+
+
+
 $(() => {
   createHeaderButtons()
   createMenu()
+  scrollDownOnClick()
 })
