@@ -88,7 +88,87 @@ changeColorOnHover = () => {
   )
 }
 
+const displayMoreProjects = () => {
+  $('#more-button').hide()
 
+  $moreProjects = $('<div>').addClass('more-projects')
+
+  $project3container = $('<div>').css('display', 'flex').addClass('main-text')
+  $project3container2 = $('<div>').css('display', 'grid').css('margin', 'auto')
+  $project3image = $('<img>').attr('src', 'pictures/project3.jpeg').attr('id', 'project3-image')
+  $project3title = $('<h3>').text('T#')
+  $project3text = $('<p>').text('I created my own coding language called T# using a Samsung Smart Fridge.')
+
+  $project4container = $('<div>').css('display', 'flex').addClass('main-text')
+  $project4container2 = $('<div>').css('display', 'grid').css('margin', 'auto')
+  $project4image = $('<img>').attr('src', 'pictures/project4.jpeg').attr('id', 'project4-image')
+  $project4title = $('<h3>').text('Project 4')
+  $project4text = $('<p>').text('Project 4 is a placeholder project for later on when I have something to put here.')
+
+  $showLessButton = $('<button>').text('Show Less ').attr('id', 'less-button')
+  $upArrow = $('<a>').addClass('fa-solid fa-angle-up').appendTo($showLessButton)
+
+  $('#container-projects').append($moreProjects)
+  $moreProjects.append($project3container, $project4container, $showLessButton)
+  $project3container.append($project3image, $project3container2)
+  $project3container2.append($project3title, $project3text)
+  $project4container.append($project4container2, $project4image)
+  $project4container2.append($project4title, $project4text)
+
+  $showLessButton.on('click', () => {
+    $('#more-button').show()
+    $moreProjects.remove()
+  })
+
+  animateShowLessButton()
+}
+
+
+
+
+const makeShowMore = () => {
+  $showMoreButton = $('<button>').text('Show More ').attr('id', 'more-button')
+  $downArrow = $('<a>').addClass('fa-solid fa-angle-down').appendTo($showMoreButton)
+
+  $('#container-projects').append($showMoreButton)
+
+  $showMoreButton.on('click', displayMoreProjects)
+}
+
+
+const animateShowMoreButton = () => {
+  $('#more-button').hover(
+    () => {
+      $('#more-button').animate({
+        borderWidth: '4px',
+        padding: '+=2'
+      })
+    },
+    () => {
+      $('#more-button').animate({
+        borderWidth: '2px',
+        padding: '-=2'
+      })
+    }
+  )
+}
+
+const animateShowLessButton = () => {
+  $('#less-button').hover(
+    () => {
+      $('#less-button').animate({
+        borderWidth: '4px',
+        padding: '+=2'
+      })
+    },
+    () => {
+      $('#less-button').animate({
+        borderWidth: '2px',
+        padding: '-=2'
+      })
+    }
+  )
+}
 
 
 $(() => {
@@ -96,4 +176,7 @@ $(() => {
   createMenu()
   scrollDownOnClick()
   changeColorOnHover()
+  makeShowMore()
+  animateShowMoreButton()
+  animateShowLessButton()
 })

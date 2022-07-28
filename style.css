@@ -6,7 +6,8 @@ body {
   font-size: 100%;
 }
 h1 {
-  font-size: 2.5em;
+  font-family: 'Cormorant SC', serif;
+  font-size: 5vw;
   text-align: center;
   padding: 80px 0px 20px 0px;
   margin-top: 0px;
@@ -75,7 +76,7 @@ nav {
 }
 /* ---------------------------------------projects layout */
 /* pictures */
-.landscaper, .tic {
+.landscaper, .tic, #project3-image, #project4-image {
   height: 100%;
   width: 50%;
 }
@@ -99,16 +100,28 @@ nav {
   margin: auto;
 }
 
+#more-button, #less-button {
+  color: #005b96;
+  padding: 10px;
+  cursor: pointer;
+  border: 2px solid #005b96;
+  border-radius: 5px;
+
+}
 
 
+/*------------------------------------------ h2s */
 #about-me, #projects, #resume, #contact {
+  font-size: 3vw;
+  font-family: 'Cormorant SC', serif;
   padding-top: 50px;
 }
 
 .main-text {
+  font-size: 1.5vw;
   margin: 0 auto;
   width: 70%;
-  padding-bottom: 25px;
+  padding-bottom: 50px;
 }
 
 
