@@ -67,7 +67,7 @@ changeColorOnHover = () => {
       $('.about-button').css('border', '2px solid white').css('color', 'white')
     },
     () => {
-      $('.about-button').css('border', '2px solid #6497b1').css('color', '#6497b1')
+      $('.about-button').css('border', '2px solid #93deff').css('color', '#93deff')
     }
   )
   $('.projects-button').hover(
@@ -75,7 +75,7 @@ changeColorOnHover = () => {
       $('.projects-button').css('border', '2px solid white').css('color', 'white')
     },
     () => {
-      $('.projects-button').css('border', '2px solid #6497b1').css('color', '#6497b1')
+      $('.projects-button').css('border', '2px solid #93deff').css('color', '#93deff')
     }
   )
   $('.resume-button').hover(
@@ -83,7 +83,7 @@ changeColorOnHover = () => {
       $('.resume-button').css('border', '2px solid white').css('color', 'white')
     },
     () => {
-      $('.resume-button').css('border', '2px solid #6497b1').css('color', '#6497b1')
+      $('.resume-button').css('border', '2px solid #93deff').css('color', '#93deff')
     }
   )
 }

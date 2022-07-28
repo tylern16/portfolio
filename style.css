@@ -7,11 +7,16 @@ body {
 }
 h1 {
   font-family: 'Cormorant SC', serif;
-  font-size: 5vw;
+  font-size: 7vw;
   text-align: center;
-  padding: 80px 0px 20px 0px;
+  padding: 100px 0px 20px 0px;
   margin-top: 0px;
   margin-bottom: 10px;
+}
+.welcome-container {
+  background-image: url(pictures/background5.jpeg);
+  color: white;
+  background-size: cover;
 }
 
 
@@ -60,8 +65,8 @@ nav {
 .about-button, .projects-button, .resume-button {
   padding: 5px;
   background-color: #03396c;
-  color: #6497b1;
-  border: 2px solid #6497b1;
+  color: #93deff;
+  border: 2px solid #93deff;
   border-radius: 5px;
 }
 .github-button {
@@ -116,6 +121,9 @@ nav {
   font-family: 'Cormorant SC', serif;
   padding-top: 50px;
 }
+#about-me {
+  margin-top: 0;
+}
 
 .main-text {
   font-size: 1.5vw;
@@ -127,6 +135,15 @@ nav {
 
 #about-container, #resume-container {
   background-color: #6497b1;
+}
+#contact {
+  margin-top: 0;
+  padding-top: 60px;
+}
+#contact-container {
+  background-image: url(pictures/background5.jpeg);
+  color: white;
+  background-size: cover;
 }
 
 footer {
