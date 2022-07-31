@@ -94,13 +94,13 @@ const displayMoreProjects = () => {
   $moreProjects = $('<div>').addClass('more-projects')
 
   $project3container = $('<div>').css('display', 'flex').addClass('main-text')
-  $project3container2 = $('<div>').css('display', 'grid').css('margin', 'auto')
-  $project3image = $('<img>').attr('src', 'pictures/project3.jpeg').attr('id', 'project3-image')
+  $project3container2 = $('<div>').css('display', 'grid').css('margin', '10px')
+  $project3image = $('<img>').attr('src', 'pictures/codingImage.jpeg').attr('id', 'project3-image').css('height', '200%')
   $project3title = $('<h3>').text('T#')
   $project3text = $('<p>').text('I created my own coding language called T# using a Samsung Smart Fridge.')
 
   $project4container = $('<div>').css('display', 'flex').addClass('main-text')
-  $project4container2 = $('<div>').css('display', 'grid').css('margin', 'auto')
+  $project4container2 = $('<div>').css('display', 'grid').css('margin', '10px')
   $project4image = $('<img>').attr('src', 'pictures/project4.jpeg').attr('id', 'project4-image')
   $project4title = $('<h3>').text('Project 4')
   $project4text = $('<p>').text('Project 4 is a placeholder project for later on when I have something to put here.')
