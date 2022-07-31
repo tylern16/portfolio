@@ -9,10 +9,11 @@ Technologies used:
 
 Approach:
 
-  1. I started off this project by drawing wireframes of what I wanted the site to look like and then adding unstyled HTML to the page.
-  2. Then I added the fixed nav bar with the drop down menu that scrolls the clicked on section into view. This was probably the most difficult task of the project.
-  3. Then more content to the page with a combination of HTML and jQuery. The projects section of the page was difficult because I added a "show more" button and displayed the projects in flexboxes.
-  4. I finished up with a lot of styling and some responsive design. The page could definitely look better in terms of pictures and color scheme but I'm happy with the functionality.
+  1. I started off this project by drawing wireframes. I decided to have one main page with several sections on it like About Me, Projects, etc, and a sticky nav bar that scrolls to the section that is clicked on. I chose this design based on looking at other developer portfolios and it makes sense given the lack of content for most of the pages/sections.
+  2. I started by making some un-styled HTML for the sections.
+  3. Then I added the sticky nav bar with the drop down menu that scrolls the clicked on section into view. This was probably the most difficult task of the project.
+  4. Then added more content to the page with a combination of HTML and jQuery. The projects section of the page was difficult because I added a "show more" button and displayed the projects in flexboxes.
+  5. I finished up with a lot of styling and some responsive design. The page could definitely look better in terms of pictures and color scheme but I'm happy with the functionality.
 
 Unsolved Problems/Areas of Improvement:
   - I tried a mobile first design and I like the way the site looks when it is small but as it is dragged out it gets corrected but it doesn't look as good so I may want to move the nave bar to the side as it grows it the future.
